@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakshana K R | Engineering Portfolio</title>
+<meta name="description" content="Final-year Electronics & Instrumentation Engineering student building monitoring, fault-detection and energy-analysis tools. Projects, skills and experience.">
+<meta property="og:title" content="Rakshana K R | Engineering Portfolio">
+<meta property="og:description" content="Instrumentation, process control and industrial automation, with Python-based monitoring projects.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1120">
+<style>
+:root{color-scheme:dark;--bg:#0b1120;--panel:#121c2e;--card:rgba(18,28,46,.88);--text:#eef4ff;--muted:#a7b5ca;--accent:#62e6c5;--accent2:#91a7ff;--line:rgba(255,255,255,.12);--onaccent:#09201c;--navbg:rgba(11,17,32,.92);--glow:#1b3150}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){color-scheme:light;--bg:#f6f8fc;--panel:#fff;--card:#fff;--text:#14213a;--muted:#4b5b75;--accent:#0b7a64;--accent2:#4256c9;--line:rgba(20,33,58,.14);--onaccent:#fff;--navbg:rgba(246,248,252,.94);--glow:#dbe6f7}}
+:root[data-theme="dark"]{color-scheme:dark}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:radial-gradient(ellipse at 85% 0%,var(--glow) 0,transparent 36%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--navbg);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}.navlinks a:hover,.projectlinks a:hover{color:var(--accent)}
+.hero{padding:72px 0 56px;display:grid;grid-template-columns:1.5fr .8fr;gap:40px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:750;text-transform:uppercase;letter-spacing:.15em;font-size:.78rem}
+.hero h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1.02;letter-spacing:-.055em;margin:16px 0}.hero h1 span{color:var(--accent)}
+.hero p{max-width:660px;color:var(--muted);font-size:1.1rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;padding:11px 17px;border-radius:12px;font-weight:750;border:1px solid var(--line);background:var(--panel)}.btn.primary{background:var(--accent);color:var(--onaccent);border-color:var(--accent)}
+.profile-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(98,230,197,.12),rgba(145,167,255,.08));border-radius:24px;padding:26px}
+.monogram{height:100px;width:100px;border-radius:26px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b1120;display:grid;place-items:center;font-size:2rem;font-weight:900;margin-bottom:22px}
+.profile-card h2{margin:0 0 5px;font-size:1.3rem}.profile-card p{margin:0;color:var(--muted);font-size:.95rem}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.stat{background:rgba(127,127,127,.12);border-radius:12px;padding:12px}.stat strong{display:block;color:var(--accent);font-size:1.05rem}.stat small{color:var(--muted)}
+section{padding:44px 0}.section-head{margin-bottom:24px}.kicker{color:var(--accent);text-transform:uppercase;font-size:.75rem;letter-spacing:.15em;font-weight:800}
+.section-head h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin:7px 0}.section-head p{color:var(--muted);margin:0;max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:23px;min-width:0}.card h3{margin:9px 0 8px;font-size:1.18rem}.card p,.card li{color:var(--muted);font-size:.95rem}.card ul{padding-left:20px}
+.tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.tag{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:4px 9px;color:var(--muted)}
+.iconbox{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(98,230,197,.12);color:var(--accent);font-size:1.2rem}
+.projectlinks{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;color:var(--accent);font-weight:700;font-size:.9rem}
+.project-label{font-size:.73rem;color:var(--accent2);text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.skills{display:flex;gap:10px;flex-wrap:wrap}.skill{padding:10px 14px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.timeline{display:grid;gap:14px}.timeline .card{display:grid;grid-template-columns:180px 1fr;gap:18px}.date{color:var(--accent);font-weight:750;font-size:.9rem}
+.contact{display:flex;gap:12px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:48px 0 32px}.grid{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.85rem}.timeline .card{grid-template-columns:1fr;gap:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="brand" href="#home">RAKSHANA<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+<main id="home">
+<div class="hero">
+<div><div class="eyebrow">Engineering · Instrumentation · Automation</div><h1>Hi, I'm <span>Rakshana</span> K R.</h1><p>Final-year Electronics & Instrumentation Engineering student with hands-on training in PLC, field instrument calibration and PCB testing, building monitoring and fault-detection tools for industrial data.</p><div class="actions"><a class="btn primary" href="#projects">Explore my projects ↗</a><a class="btn" href="https://github.com/Rakshana1304" target="_blank" rel="noreferrer">GitHub</a><a class="btn" href="https://www.linkedin.com/in/rakshana-ramesh-sankar-5b0b6b2b6" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+<aside class="profile-card"><div class="monogram">RK</div><h2>Electronics & Instrumentation</h2><p>Sri Sairam Engineering College · Class of 2027</p><div class="statrow"><div class="stat"><strong>8.41</strong><small>CGPA</small></div><div class="stat"><strong>3</strong><small>Projects</small></div><div class="stat"><strong>IEEE</strong><small>Vice Chair</small></div></div></aside>
+</div>
+<section id="about"><div class="section-head"><div class="kicker">01 / About</div><h2>Connecting instrumentation with practical software.</h2><p>I turn engineering data into monitoring tools people can act on, combining instrumentation fundamentals, fault detection, data visualization and Python.</p></div><div class="grid"><article class="card"><div class="iconbox">⌁</div><h3>What I focus on</h3><p>Sensors and transmitters, calibration, PID and process control, PLC and ladder logic, monitoring dashboards and fault detection.</p></article><article class="card"><div class="iconbox">✦</div><h3>How I work</h3><p>Curious, collaborative and practical: I learn how a system behaves, test it under different conditions and present results clearly to technical and non-technical reviewers.</p></article></div></section>
+<section id="projects"><div class="section-head"><div class="kicker">02 / Selected work</div><h2>Engineering projects</h2><p>Monitoring, fault detection and data-driven decision support.</p></div><div class="grid">
+<article class="card"><div class="project-label">Final-year project</div><h3>Simusolve: AI-Driven Fault Detection System</h3><p>A Digital Twin of industrial equipment for observing parameter changes and detecting faults without affecting the physical system.</p><ul><li>Processes temperature, vibration, pressure, current, voltage and load data.</li><li>Random Forest model detects and classifies faults such as sensor drift, abnormal vibration and pressure fluctuations.</li><li>Health-monitoring dashboard with anomaly alerts and maintenance recommendations to reduce unplanned downtime.</li></ul><div class="tagrow"><span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">Digital Twin</span><span class="tag">Monitoring</span></div></article>
+<article class="card"><div class="project-label">Simulation · Live demo</div><h3>Automotive Brake Pressure Monitoring</h3><p>A browser-based simulation for observing brake-pressure behaviour and detecting abnormal conditions.</p><ul><li>Live pressure-time trend, gauge display and event history.</li><li>Simulates normal, low-pressure, excessive-pressure and sensor-failure conditions.</li><li>Configurable alarm thresholds, a sensor calibration demo and Start/Stop/Reset controls.</li></ul><div class="tagrow"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Plotly</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div><div class="projectlinks"><a href="https://automotive-brake-pressure-monitoring-hvinbl2vk4hwrsx6ompugz.streamlit.app/" target="_blank" rel="noreferrer">Open live demo ↗</a></div></article>
+<article class="card"><div class="project-label">Energy data analysis · Live demo</div><h3>EnergyLens: Retail Store Energy Analyzer</h3><p>A Python analyzer that turns building energy data into clear, usable insights, with an interactive dashboard so facility and energy teams can review consumption without manual spreadsheet work.</p><div class="tagrow"><span class="tag">Python</span><span class="tag">Data Analysis</span><span class="tag">Dashboard</span></div><div class="projectlinks"><a href="https://energylens-retail.streamlit.app/" target="_blank" rel="noreferrer">Open live demo ↗</a></div></article>
+</div></section>
+<section id="skills"><div class="section-head"><div class="kicker">03 / Toolkit</div><h2>Skills & tools</h2></div><div class="card"><h3>Instrumentation & Control</h3><div class="skills"><span class="skill">Sensors & Transmitters</span><span class="skill">Field Instrument Calibration</span><span class="skill">4–20 mA Signal Checks</span><span class="skill">Process Control</span><span class="skill">PID Control</span><span class="skill">Control Valves</span></div><h3 style="margin-top:24px">Automation & Programming</h3><div class="skills"><span class="skill">PLC & Ladder Logic</span><span class="skill">Python</span><span class="skill">Streamlit</span><span class="skill">Plotly</span><span class="skill">Pandas / NumPy</span><span class="skill">MATLAB</span><span class="skill">LabVIEW (Basic)</span><span class="skill">C (Basic)</span></div><h3 style="margin-top:24px">Hardware & Design Tools</h3><div class="skills"><span class="skill">KiCad</span><span class="skill">PCB Testing</span><span class="skill">AutoCAD (Basic)</span><span class="skill">Figma</span><span class="skill">HTML / CSS</span></div></div></section>
+<section id="experience"><div class="section-head"><div class="kicker">04 / Experience</div><h2>Internships & leadership</h2></div><div class="timeline">
+<article class="card"><div class="date">June 2026</div><div><h3>Shakthi Engineering Service, Chennai</h3><p>PCB testing and fault finding for robotic and automation systems; assisted with 2D/3D design work and demonstrated working prototypes to stakeholders, explaining results to non-technical reviewers.</p></div></article>
+<article class="card"><div class="date">June 2025</div><div><h3>Measurecon Instruments Private Limited, Chennai</h3><p>Trained in field instrument calibration across flow, level, pressure and temperature; practised calibration procedures on transmitters and sensors, including 4–20 mA signal checks.</p></div></article>
+<article class="card"><div class="date">January 2024</div><div><h3>FICS, Chennai</h3><p>Gained exposure to PLC and fare transaction systems (AFC, RFID, NFC).</p></div></article>
+<article class="card"><div class="date">IEEE CSS</div><div><h3>Vice Chair & Advocate · Sri Sairam Engineering College</h3><p>Recipient of the IEEE Best Volunteering Student Award. Led planning and execution of 3 to 4 IEEE CSS workshops, securing sponsors through direct pitches and managing logistics end to end.</p></div></article>
+</div></section>
+<section id="contact"><div class="section-head"><div class="kicker">05 / Contact</div><h2>Let's connect.</h2><p>Open to entry-level roles in instrumentation, process control and industrial automation, and to engineering project collaborations.</p></div><div class="card"><div class="contact"><a class="btn primary" href="mailto:rakshanarameshsankar13@gmail.com">Email me ↗</a><a class="btn" href="https://github.com/Rakshana1304" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/rakshana-ramesh-sankar-5b0b6b2b6" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+</main>
+<footer><span>© 2026 Rakshana K R</span><span>Electronics & Instrumentation Engineering · Class of 2027</span></footer>
+</div>
+</body>
+</html>
